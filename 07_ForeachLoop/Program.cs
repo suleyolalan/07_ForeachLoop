@@ -91,68 +91,68 @@ namespace _07_ForeachLoop
             //Öğrendiklerimizi tekrar ediyoruz
             //Değişken,Döngü,Dizi,Karar Yapısı
 
-            Console.Write("***** C# Eğitim Kampı Sınav Uygulaması *****");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+            //Console.Write("***** C# Eğitim Kampı Sınav Uygulaması *****");
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
 
-            //Sınıftaki Öğrenci Sayısını Kullanıcıdan Alma
-            Console.WriteLine("------------------------------");
-            Console.Write("Sınıfınızda Kaç Öğrenci Var: ");
-            int studentCount = int.Parse(Console.ReadLine());
-            Console.WriteLine("------------------------------");
+            ////Sınıftaki Öğrenci Sayısını Kullanıcıdan Alma
+            //Console.WriteLine("------------------------------");
+            //Console.Write("Sınıfınızda Kaç Öğrenci Var: ");
+            //int studentCount = int.Parse(Console.ReadLine());
+            //Console.WriteLine("------------------------------");
 
 
-            //Öğrenci İsmlerini ve not ortalamalarını saklayacak dizileri tanımlıyoruz burada
-            string[] studentNames = new string[studentCount]; // öğrenci sayısı ne kadarsa o kadar isim alabilsin diye 'SİZE'ı öğrenci sayısı kadar yaptık
-            double[] studentExamAvg = new double[studentCount];
+            ////Öğrenci İsmlerini ve not ortalamalarını saklayacak dizileri tanımlıyoruz burada
+            //string[] studentNames = new string[studentCount]; // öğrenci sayısı ne kadarsa o kadar isim alabilsin diye 'SİZE'ı öğrenci sayısı kadar yaptık
+            //double[] studentExamAvg = new double[studentCount];
 
-            for (int i = 0; i < studentCount; i++)
-            {
-                Console.Write($"{i + 1}. öğrencinin ismini giriniz: ");
-                studentNames[i] = Console.ReadLine();
+            //for (int i = 0; i < studentCount; i++)
+            //{
+            //    Console.Write($"{i + 1}. öğrencinin ismini giriniz: ");
+            //    studentNames[i] = Console.ReadLine();
 
-                double totalExamResult = 0;
+            //    double totalExamResult = 0;
 
-                //Her öğrenci için 3 sınav notu girişi olsun
+            //    //Her öğrenci için 3 sınav notu girişi olsun
 
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"{studentNames[i]} isimli öğrencinin {j + 1}. sınav notunu giriniz: ");
-                    double value = double.Parse(Console.ReadLine());
-                    totalExamResult += value; // NOTLARI TOPLUYORUZ
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.Write($"{studentNames[i]} isimli öğrencinin {j + 1}. sınav notunu giriniz: ");
+            //        double value = double.Parse(Console.ReadLine());
+            //        totalExamResult += value; // NOTLARI TOPLUYORUZ
 
-                }
-                Console.WriteLine(); // notlar ve ortalama arasına boşlu koymak için
+            //    }
+            //    Console.WriteLine(); // notlar ve ortalama arasına boşlu koymak için
 
-                studentExamAvg[i] = totalExamResult / 3; // ORTALAMASINI BULUYORUZ
+            //    studentExamAvg[i] = totalExamResult / 3; // ORTALAMASINI BULUYORUZ
 
-            }
+            //}
 
-            //Öğrencilerin sınav ortalamasını bulalım
+            ////Öğrencilerin sınav ortalamasını bulalım
 
-            for (int i = 0; i < studentCount; i++)
+            //for (int i = 0; i < studentCount; i++)
 
-            {
-                Console.WriteLine("--------------------------");
+            //{
+            //    Console.WriteLine("--------------------------");
 
-                Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]} ");
+            //    Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]} ");
 
-                //Öğrencilerin geçip geçemedikleri kısım (for un içine yazdık dikkat et)
+            //    //Öğrencilerin geçip geçemedikleri kısım (for un içine yazdık dikkat et)
 
-                if (studentExamAvg[i] > 50)
-                {
-                    Console.WriteLine($"{studentNames[i]} isimli öğrenci dersi geçti. ");
-                }
-                else
-                {
-                    Console.WriteLine($"{studentNames[i]} isimli öğrenci dersten kaldı. ");
-                }
+            //    if (studentExamAvg[i] > 50)
+            //    {
+            //        Console.WriteLine($"{studentNames[i]} isimli öğrenci dersi geçti. ");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{studentNames[i]} isimli öğrenci dersten kaldı. ");
+            //    }
 
-                Console.WriteLine("--------------------------");
+            //    Console.WriteLine("--------------------------");
 
-            }
+            //}
 
 
 
